@@ -1,0 +1,56 @@
+* .container img {
+    max-width: 370px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h5,
+p {
+    font-weight: bold;
+}
+
+.card-header {
+    color: rgba(160, 57, 57, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-title {
+    color: rgb(68, 65, 40);
+    font-family: 'Kalam', 'cursive';
+
+}
+
+.container {
+    text-align: center;
+}
+
+.btn btn-danger {
+    color: orange;
+    margin: 120px;
+}
+
+img {
+    border-radius: 9%;
+}
+
+.modal-body {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: orange;
+}
+
+.bt {
+    margin:10px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    width: 98px;
+    height: 28px;
+    border-radius: 50px;
+}

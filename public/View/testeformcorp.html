@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cupcakes Dreams</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+  <!-- Font awesome -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+  <!-- Gallery Lightbox -->
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- Theme color -->
+  <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+  <!-- Main style sheet -->
+  <link href="assets/style_cd/style.css" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+
+
+  <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <script type="module" src="../Model/testeformcorp.js"></script>
+
+</head>
+
+<body>
+
+  <!--START SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#">
+    <i class="fa fa-angle-up"></i>
+  </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="mu-header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!--  Text based logo  -->
+          <a class="navbar-brand" href="../index.html">Cupcakes<span>Dreams</span></a>
+
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#mu-about-us">SOBRE NÓS</a></li>
+            <li><a href="#mu-restaurant-menu">MENU</a></li>
+            <li><a href="#mu-chef">MAIS VENDIDOS</a></li>
+            <li><a href="#mu-contact">ENCOMENDE</a></li>
+            <li><a href="carrinhodecompras.html"><i></i><img src="assets/img/menu/car.png" alt="img"></i> </a></li>
+
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header section -->
+
+
+  <!-- Start Contact section -->
+  <section id="mu-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-contact-area">
+
+            <div class="mu-title">
+              <h2></h2>
+              <p></p>
+              <span class="mu-subtitle">Seus dados e detalhes da compra</span>
+            </div>
+
+
+            <body>
+              <div class="mu-title">
+                <span class="mu-subtitle"></span>
+                <h2></h2>
+              </div>
+
+              <body>
+
+                <div id="carrinho">
+                  <h2>Preencha os campos</h2>
+                </div>
+
+                <body>
+
+                  <div class="mu-contact-content">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mu-contact-left">
+                          <!-- Email message div -->
+                          <div id="form-messages"></div>
+                          <!-- Start contact form -->
+
+                          <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="Endereço">Endereço</label>
+                            <input type="endereço" class="form-control" id="endereço" name="endereço"
+                              placeholder="endereço" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="subject">CEP</label>
+                            <input type="number" class="form-control" id="CEP" name="CEP" placeholder="CEP" required>
+                            <p></p>
+                            <button type="button" id="calculate-freight">Calcular Frete</button>
+                          </div>
+                          <div id="freight-result"></div>
+
+
+
+                          <div class="form-group">
+                            <label for="entrega">Dia da Entrega</label>
+                            <select id="delivery-day" name="delivery-day">
+                          </div>
+                          <option value="segunda">Segunda-feira</option>
+                          <option value="terca">Terça-feira</option>
+                          <option value="quarta">Quarta-feira</option>
+                          <option value="quinta">Quinta-feira</option>
+                          <option value="sexta">Sexta-feira</option>
+                          <option value="sabado">Sabado</option>
+                          <input type="date" class="form-control" id="data_entrega" name="xx/xx/xxxx" placeholder="xx/xx/xxxx" required>
+                        </div>
+
+                        <!--<nav class="navbar navbar-default navbar-fixed-bottom"></nav>-->
+                        <div>
+                          <ul id="lista-carrinho"></ul>
+
+
+                          <h4>aceitamos pagamento em dinheiro e cartão, apenas na entrega</h4>
+                          <h6>se caso a sua forma de pagamento, for uma dessas acima, clique em "Concluir compra" e
+                            entre em contato com a nossa central de atendimento ao cliente para efetuar o pagamento na
+                            entrega, caso ao contrario, clique em "Ir para o pagamento" para efetuar seu pagamento via
+                            PIX.</h6>
+                          <p><i class="fa fa-phone"></i> (11) 96457 6688</p>
+                          <h4 class="text-center text-success"><button type="submit" class="mu-send-btn"
+                              id="comprar">Concluir compra</button>
+                          </h4>
+
+                          <h4 class="text-center text-success"><button type="submit" class="mu-send-btn" id="pagamento_qrcode">Ir para o pagamento</button>
+                          </h4>
+                        </div>
+                        </nav>
+
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                      <div class="mu-contact-right">
+                        <div class="mu-contact-widget">
+                          <h3>Prazo para pedidos</h3>
+                          <address>
+                            <p>Tentamos atender a todos no menor prazo possível, o ideal é que para os pedidos de grande
+                              quantidade sejam pedidos com 2 dias de antecedência, no entanto algumas vezes conseguimos
+                              para o mesmo dia, ou para o dia seguinte.
+
+                              Para bolos maiores pedimos um prazo minimo de 3 dias.</p>
+                            <h2></h2>
+                            <p>Em caso de duvida sobre o seu pedido, entre em contato conosco:</p>
+                            <p><i class="fa fa-envelope-o"></i>pedido@dreamscake.com.br</p>
+                            <p></p>
+                            <h2></h2>
+                        </div>
+                        <div class="mu-contact-widget">
+                          <h3>O endereço para a retirada do seu pedido é:</h3>
+                          <p><i class="fa fa-map-marker"></i>Rua Itapura 888, São Paulo, São Paulo, 03310-000</p>
+                          </address>
+                        </div>
+                        <h3></h3>
+                        <div class="mu-contact-widget">
+                          <h3>Horario de funcionamento</h3>
+                          <address>
+                            <p><span>Segunda a sexta</span> 9.00 am ás 12 pm</p>
+                            <p><span>Sabado</span> 9.00 am ás 10 pm</p>
+                            <p><span>Domingo</span> 10.00 am ás 12 pm</p>
+                          </address>
+                        </div>
+                      </div>
+                    </div>
+
+                    <script>
+                      const calculateFreightButton = document.getElementById("calculate-freight");
+                      const CEPInput = document.getElementById("CEP");
+                      const freightResultDiv = document.getElementById("freight-result");
+
+                      calculateFreightButton.addEventListener("click", () => {
+                        const CEP = CEPInput.value;
+                        if (CEP.length !== 8 || isNaN(CEP)) {
+                          freightResultDiv.textContent = "CEP inválido.";
+                          return;
+                        }
+
+                        const freightValue = calcularFrete(CEP); // 
+                        freightResultDiv.textContent = `Valor do frete: R$ ${freightValue.toFixed(2)}`;
+                      });
+
+                      function calcularFrete(cep) {
+                        return 10.50; 11.25; 20.00;
+                      }
+                    </script>
+
+                </body>
+
+</html>

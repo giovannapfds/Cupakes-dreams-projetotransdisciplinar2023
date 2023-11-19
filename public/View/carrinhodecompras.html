@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cupcakes Dreams</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+  <!-- Font awesome -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+  <!-- Gallery Lightbox -->
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- Theme color -->
+  <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+  <!-- Main style sheet -->
+  <link href="assets/style_cd/style.css" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script type="module" src="../Model/carrinhodecompras.js"></script>
+</head>
+
+<body>
+
+  <!--START SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#">
+    <i class="fa fa-angle-up"></i>
+  </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="mu-header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!--  Text based logo  -->
+          <a class="navbar-brand" href="../index.html">Cupcakes<span>Dreams</span></a>
+
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#mu-about-us">SOBRE NÓS</a></li>
+            <li><a href="#mu-restaurant-menu">MENU</a></li>
+            <li><a href="#mu-chef">MAIS VENDIDOS</a></li>
+            <li><a href="#mu-contact">ENCOMENDE</a></li>
+            <li><a href="carrinhodecompras.html"><i></i><img src="assets/img/menu/car.png" alt="img"></i> </a></li>
+            <li><a href="#mu-contact"><h4 class="text-center text-success">Total: R$<span id="total"></span></h4></a></li>
+            
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header section -->
+  <section id="mu-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-contact-area">
+
+
+
+            <div class="mu-title">
+              <span class="mu-subtitle">Carrinho de compras</span>
+            </div>
+
+
+
+            <div id="carrinho">
+              <h2>Pedidos</h2>
+            </div>
+              <div class="valor-total">
+                <h4 class="text-center text-success"><button type="submit" class="btn text-white" id="btn-proximo">Finalizar compra</button>
+                </h4>
+                <ul id="lista-carrinho"></ul>
+              </div>
+        
+
+
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-8.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Canela cake</a></h4>
+                <span>R$09.50</span>
+                <p>O cupcake de canela é uma deliciosa sobremesa que traz todo o sabor e fragrância...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Canela cake', 9.50)">quero +
+                  1</button>
+              </div>
+            </div>
+            
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-2.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Sonho de valsa</a></h4>
+                <span>R$10.50</span>
+                <p>Um delicioso cupcake com massa fofinha e recheado com um creme de sonho de valsa...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Sonho de valsa', 10.50)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-3.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Mallow mallow</a></h4>
+                <span>R$11.95</span>
+                <p>O cupcake sabor marshmallow é uma deliciosa sobremesa feita com massa macia e fofinha..</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Mallow mallow', 11.95)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-6.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Brigadeirão cake</a></h4>
+                <span>R$13.25</span>
+                <p>O cupcake de sabor brigadeiro é uma deliciosa sobremesa que tem uma massa fofinha de
+                  baunilha, recheada com um cremoso e irresistível brigadeiro...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Brigadeirão cake', 13.95)">quero
+                  + 1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-13.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Cookie mousse</a></h4>
+                <span>R$11.95</span>
+                <p>O delicioso cupcake sabor cookie é feito com uma massa macia e saborosa de baunilha...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Cookie mousse', 11.95)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-15.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Choco choco</a></h4>
+                <span>R$15.55</span>
+                <p>O cupcake sabor chocolate é uma deliciosa sobremesa que consiste em um bolinho...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Choco choco', 15.55)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-16.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Chantilly color</a></h4>
+                <span>R$14.85</span>
+                <p>A massa macia de bolo é recheada com um creme suave e coberta com um generoso chantilly..</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Chantilly color', 14.85)">quero
+                  + 1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-28.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Flower cake</a></h4>
+                <span>R$11.95</span>
+                <p>Com massa fofinha e decorado com delicadas pétalas de buttercream colorido....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Flower cake', 11.95)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-9.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Bride white</a></h4>
+                <span>R$13.90</span>
+                <p>Cupcake com tema de noiva é uma deliciosa sobremesa decorada em tom branco ou rosa claro,
+                  com...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Bride white', 13.90)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-7.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Rose flower</a></h4>
+                <span>R$15.99</span>
+                <p>O cupcake em formato de rosa é uma delicadeza que encanta os olhos e o paladar...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Rose flower', 15.99)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-11.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Cute yellowing</a></h4>
+                <span>R$08.95</span>
+                <p>Este delicioso cupcake amarelinho é super macio e fofo, com um sabor suave e delicioso...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Cute yellowing', 8.95)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-12.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Blue ovinhos</a></h4>
+                <span>R$08.00</span>
+                <p>O cupcake de Páscoa é uma sobremesa perfeita para celebrar a data com muita doçura....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Blue ovinhos', 8.00)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-1.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Cheryl cake</a></h4>
+                <span>R$16.25</span>
+                <p>Delicioso cupcake de morango com massa fofinha e cobertura cremosa, decorado com um morango
+                  fresco no topo...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Cheryl cake', 14.85)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-14.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Buble cake</a></h4>
+                <span>R$11.95</span>
+                <p>Cupcake de morango irresistível, com sabor intenso de frutas vermelhas e uma textura macia
+                  que derrete na boca...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Buble cake', 11.95)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-5.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Flamingo pink</a></h4>
+                <span>R$14.00</span>
+                <p>Cupcake de morango caseiro, com pedacinhos da fruta fresca na massa e uma generosa camada de
+                  glacê no formato de flamingo....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Flamingo pink', 13.90)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-22.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Red cake</a></h4>
+                <span>R$13.00</span>
+                <p>Red cake com massa de cor vermelha e tradicional, recheado com um leve, saboroso e adocicado
+                  creme de...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Red cake', 13.00)">quero
+                  + 1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-29.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Degrade cake pink</a></h4>
+                <span>R$12.90</span>
+                <p>Cupcake de morango com cobertura suave e doce, feito com ingredientes naturais e decorado
+                  com...</p>
+                <button type="button" class="mu-send-btn"
+                  onclick="adicionarAoCarrinho('Degrade cake pink', 12.90)">quero + 1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-4.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Morando cake</a></h4>
+                <span>R$07.85</span>
+                <p>Cupcake de morango deliciosamente perfumado, com uma combinação perfeita entre a massa macia
+                  e....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Morando cake', 7.85)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-19.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Frambo love</a></h4>
+                <span>R$09.25</span>
+                <p>Cupcake de licor de framboesa: Feito com framboesas frescas e um...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Frambo love', 9.25)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-20.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Laranjinha</a></h4>
+                <span>R$11.95</span>
+                <p>Cupcake de licor de laranja: Com uma combinação refrescante de laranja...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Laranjinha', 11.95)">quero +
+                  1</button>
+              </div>
+            </div>
+            
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-21.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Caramelinho</a></h4>
+                <span>R$15.55</span>
+                <p>Cupcake de licor de caramelo salgado: O contraste entre o doce do caramelo e o salgado do....
+                </p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Caramelinho', 15.55)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-26.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Choco leite</a></h4>
+                <span>R$09.95</span>
+                <p>Cupcake de licor de chocolate: Um cupcake macio e delicioso com sabor de chocolate intenso e
+                  um...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Choco leite', 9.55)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-23.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Mendoa cake</h4>
+                <span>R$12.95</span>
+                <p>Cupcake de licor de amêndoa: Com um sabor levemente adocicado e um aroma irresistível de
+                  amêndoa...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Mendoa cake', 12.95)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-24.jpg" alt="img" style="width: 1100px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Cafêzinho</a></h4>
+                <span>R$08.25</span>
+                <p>Cupcake de licor de café: Perfeito para os amantes de café, este cupcake é feito com um
+                  delicioso café expresso....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Cafêzinho', 8.25)">quero
+                  + 1</button>
+              </div>
+            </div>
+            
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-18.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Mirtilo </a></h4>
+                <span>R$13.00</span>
+                <p>Cupcake de baunilha com geleia de mirtilo: Uma combinação deliciosa de baunilha...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Mirtilo', 13.00)">quero
+                  + 1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-10.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Limãozinho</a></h4>
+                <span>R$14.00</span>
+                <p>Cupcake de baunilha com geleia de limão: Um cupcake clássico...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Limãozinho', 14.00)">quero +
+                  1</button>
+              </div>
+            </div>
+            
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-31.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Manga</a></h4>
+                <span>R$07.85</span>
+                <p>Cupcake de baunilha com geleia de manga: Com uma geleia de manga ....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Manga', 7.85)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-32.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Dama cream </a></h4>
+                <span>R$09.99</span>
+                <p>Cupcake de baunilha com geleia de damasco: Com um sabor frutado e levemente ácido...</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Dama cream ', 9.99)">quero +
+                  1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-33.jpg" alt="img" style="width: 110px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Maracúja</h4>
+                <span>R$11.00</span>
+                <p>Cupcake de baunilha com geleia de maracujá: Com um recheio de geleia de maracujá cremoso...
+                </p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Maracúja', 11.00)">quero
+                  + 1</button>
+              </div>
+            </div>
+
+            <h2></h2>
+            <div class="media">
+              <img class="media-object" src="assets/img/menu/item-34.jpg" alt="img" style="width: 1100px;">
+              <div class="media-body">
+                <h4 class="media-heading"><a href="#">Tortinha de maça</a></h4>
+                <span>R$14.25</span>
+                <p>Cupcake de baunilha com geleia de maçã: Com uma geleia de maçã suculenta no interior....</p>
+                <button type="button" class="mu-send-btn" onclick="adicionarAoCarrinho('Tortinha de maça', 14.25)">quero
+                  + 1</button>
+              </div>
+            </div>
+
+            </li>
+          </section>
+
+            <script>
+
+              const carrinho = [];
+              let total = 0;
+
+              function adicionarAoCarrinho(produto, preco) {
+                carrinho.push({ produto, preco });
+                total += preco;
+                atualizarCarrinho();
+
+                console.log(carrinho, total)
+              }
+
+              function atualizarCarrinho() {
+                const listaCarrinho = document.getElementById("lista-carrinho");
+                const totalElement = document.getElementById("total");
+
+                listaCarrinho.innerHTML = "";
+                carrinho.forEach(item => {
+                  const li = document.createElement("li");
+                  li.textContent = `${item.produto} - R$${item.preco.toFixed(2)}`;
+                  listaCarrinho.appendChild(li);
+                });
+
+                totalElement.textContent = total.toFixed(2);
+              }
+            </script>
+</body>
+
+</html>
